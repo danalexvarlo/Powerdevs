@@ -1,0 +1,177 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.powertechs"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:5:5-71:19
+12        android:allowBackup="true"
+12-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.8.0] C:\Users\danal\.gradle\caches\transforms-3\205feb206244c8c1b4b56fcdc8d69988\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+14        android:dataExtractionRules="@xml/data_extraction_rules"
+14-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:7:9-65
+15        android:debuggable="true"
+16        android:fullBackupContent="@xml/backup_rules"
+16-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:8:9-54
+17        android:icon="@mipmap/ic_launcher"
+17-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:9:9-43
+18        android:label="@string/app_name"
+18-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:10:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:11:9-54
+20        android:supportsRtl="true"
+20-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:12:9-35
+21        android:testOnly="true"
+22        android:theme="@style/Theme.PowerTechs" >
+22-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:13:9-48
+23        <activity
+23-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:15:9-20:66
+24            android:name="com.example.powertechs.HomeActivity"
+24-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:16:13-41
+25            android:configChanges="orientation|keyboardHidden|screenSize"
+25-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:17:13-74
+26            android:exported="false"
+26-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:18:13-37
+27            android:label="@string/title_activity_home"
+27-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:19:13-56
+28            android:theme="@style/Theme.PowerTechs.Fullscreen" />
+28-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:20:13-63
+29        <activity
+29-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:21:9-29:20
+30            android:name="com.example.powertechs.view.ui.activities.MenuActivity"
+30-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:22:13-60
+31            android:exported="false"
+31-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:23:13-37
+32            android:label="@string/title_activity_menu"
+32-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:24:13-56
+33            android:theme="@style/Theme.PowerTechs.NoActionBar" >
+33-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:25:13-64
+34            <meta-data
+34-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:26:13-28:36
+35                android:name="android.app.lib_name"
+35-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:27:17-52
+36                android:value="" />
+36-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:28:17-33
+37        </activity>
+38        <activity
+38-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:30:9-36:20
+39            android:name="com.example.powertechs.view.ui.activities.HomeActivity"
+39-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:31:13-60
+40            android:exported="false" >
+40-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:32:13-37
+41            <meta-data
+41-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:26:13-28:36
+42                android:name="android.app.lib_name"
+42-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:27:17-52
+43                android:value="" />
+43-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:28:17-33
+44        </activity>
+45        <activity
+45-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:37:9-43:20
+46            android:name="com.example.powertechs.view.ui.activities.RegistroActivity"
+46-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:38:13-64
+47            android:exported="true" >
+47-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:39:13-36
+48            <meta-data
+48-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:26:13-28:36
+49                android:name="android.app.lib_name"
+49-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:27:17-52
+50                android:value="" />
+50-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:28:17-33
+51        </activity>
+52        <activity
+52-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:44:9-50:20
+53            android:name="com.example.powertechs.view.ui.activities.RecuperarActivity"
+53-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:45:13-65
+54            android:exported="true" >
+54-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:46:13-36
+55            <meta-data
+55-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:26:13-28:36
+56                android:name="android.app.lib_name"
+56-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:27:17-52
+57                android:value="" />
+57-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:28:17-33
+58        </activity>
+59        <activity
+59-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:51:9-57:20
+60            android:name="com.example.powertechs.view.ui.activities.LoginActivity"
+60-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:52:13-61
+61            android:exported="true" >
+61-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:53:13-36
+62            <meta-data
+62-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:26:13-28:36
+63                android:name="android.app.lib_name"
+63-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:27:17-52
+64                android:value="" />
+64-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:28:17-33
+65        </activity>
+66        <activity
+66-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:58:9-70:20
+67            android:name="com.example.powertechs.view.ui.activities.MainActivity"
+67-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:59:13-60
+68            android:exported="true" >
+68-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:60:13-36
+69            <intent-filter>
+69-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:61:13-65:29
+70                <action android:name="android.intent.action.MAIN" />
+70-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:62:17-69
+70-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:62:25-66
+71
+72                <category android:name="android.intent.category.LAUNCHER" />
+72-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:64:17-77
+72-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:64:27-74
+73            </intent-filter>
+74
+75            <meta-data
+75-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:26:13-28:36
+76                android:name="android.app.lib_name"
+76-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:27:17-52
+77                android:value="" />
+77-->D:\MinTic 2022\RepoCiclo4b\powerdevs\PowerTechs\app\src\main\AndroidManifest.xml:28:17-33
+78        </activity>
+79
+80        <uses-library
+80-->[androidx.window:window:1.0.0] C:\Users\danal\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+81            android:name="androidx.window.extensions"
+81-->[androidx.window:window:1.0.0] C:\Users\danal\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+82            android:required="false" />
+82-->[androidx.window:window:1.0.0] C:\Users\danal\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+83        <uses-library
+83-->[androidx.window:window:1.0.0] C:\Users\danal\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+84            android:name="androidx.window.sidecar"
+84-->[androidx.window:window:1.0.0] C:\Users\danal\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+85            android:required="false" />
+85-->[androidx.window:window:1.0.0] C:\Users\danal\.gradle\caches\transforms-3\e65b8465f5bac02dec998c398cfe1021\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+86
+87        <provider
+87-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danal\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+88            android:name="androidx.startup.InitializationProvider"
+88-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danal\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+89            android:authorities="com.example.powertechs.androidx-startup"
+89-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danal\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+90            android:exported="false" >
+90-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danal\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+91            <meta-data
+91-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danal\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+92                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+92-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danal\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+93                android:value="androidx.startup" />
+93-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danal\.gradle\caches\transforms-3\412372332f980a5c4ef0364c55a99af0\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+94            <meta-data
+94-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\danal\.gradle\caches\transforms-3\a8199b6bb025d711471524267dd78014\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+95                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+95-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\danal\.gradle\caches\transforms-3\a8199b6bb025d711471524267dd78014\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+96                android:value="androidx.startup" />
+96-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\danal\.gradle\caches\transforms-3\a8199b6bb025d711471524267dd78014\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+97        </provider>
+98    </application>
+99
+100</manifest>

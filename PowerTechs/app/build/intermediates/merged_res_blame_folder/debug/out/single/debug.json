@@ -1,0 +1,210 @@
+[
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\drawable_side_nav_bar.xml.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\drawable\\side_nav_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-pngs-45:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\layout_activity_recuperar.xml.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\layout\\activity_recuperar.xml"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\drawable_computador.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\drawable\\computador.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\drawable_pantalla.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\drawable\\pantalla.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\drawable-v24_stylo_borde_editextrojo.xml.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\drawable-v24\\stylo_borde_editextrojo.xml"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\font_robotoregular.ttf.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\font\\robotoregular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-xxxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\drawable_ic_menu_camera.xml.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\drawable\\ic_menu_camera.xml"
+    },
+    {
+        "merged": "com.example.powertechs.app-merged_res-50:/menu_nav_menu.xml.flat",
+        "source": "com.example.powertechs.app-main-52:/menu/nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\menu_nav_menu.xml.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\menu\\nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\raw_openbook1.json.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\raw\\openbook1.json"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\drawable_tecladomecanicoblanco.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\drawable\\tecladomecanicoblanco.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-xxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\layout_nav_header.xml.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\layout\\nav_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\raw_openbook.json.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\raw\\openbook.json"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\layout_activity_registro.xml.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\layout\\activity_registro.xml"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\drawable_portatil.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\drawable\\portatil.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\drawable_powertechs1.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\drawable\\powertechs1.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\drawable_ic_menu_slideshow.xml.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\drawable\\ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\drawable_stylo_borde_editext.xml.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\drawable\\stylo_borde_editext.xml"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\drawable_stylo_borde_bordeimagen.xml.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\drawable\\stylo_borde_bordeimagen.xml"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\drawable_mouse.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\drawable\\mouse.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-mdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\drawable_ic_menu_gallery.xml.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\drawable\\ic_menu_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\drawable_powertechs.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\drawable\\powertechs.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\drawable_impresora.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\drawable\\impresora.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-debug-51:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-merged_res-50:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\danal\\.gradle\\daemon\\7.4\\com.example.powertechs.app-main-52:\\layout\\activity_main.xml"
+    }
+]

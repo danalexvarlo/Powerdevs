@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.example.powertechs.app-mergeDebugResources-49:/layout/activity_recuperar.xml",
+        "source": "com.example.powertechs.app-main-52:/layout/activity_recuperar.xml"
+    },
+    {
+        "merged": "com.example.powertechs.app-mergeDebugResources-49:/layout/activity_main.xml",
+        "source": "com.example.powertechs.app-main-52:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.powertechs.app-mergeDebugResources-49:/layout/nav_header.xml",
+        "source": "com.example.powertechs.app-main-52:/layout/nav_header.xml"
+    },
+    {
+        "merged": "com.example.powertechs.app-mergeDebugResources-49:/layout/activity_registro.xml",
+        "source": "com.example.powertechs.app-main-52:/layout/activity_registro.xml"
+    },
+    {
+        "merged": "com.example.powertechs.app-mergeDebugResources-49:/layout/activity_login.xml",
+        "source": "com.example.powertechs.app-main-52:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.powertechs.app-mergeDebugResources-49:/layout/activity_home.xml",
+        "source": "com.example.powertechs.app-main-52:/layout/activity_home.xml"
+    }
+]
