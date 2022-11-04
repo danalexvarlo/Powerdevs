@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Página principal"/>
+    <item
+        android:id="@+id/nav_perfil"
+        android:title="Perfil"
+        android:icon="@drawable/iconoperfil"/>
+
+    <item
+        android:id="@+id/nav_editarperfil"
+        android:title="Editar Perfil"
+        android:icon="@drawable/iconoeditarperfil"/>
+
+    <item
+        android:id="@+id/nav_productos"
+        android:title="Productos" />
+
+    <item
+        android:icon="@drawable/iconocarrito"
+        android:id="@+id/nav_carritodecompras"
+        android:title="Carrito de compras" />
+
+    <item
+        android:id="@+id/nav_comentarios"
+        android:title="Comentarios"
+        android:icon="@drawable/iconocomentarios"/>
+
+    <item
+        android:id="@+id/nav_contactenos"
+        android:title="Contáctenos"
+        android:icon="@drawable/iconocontacto"/>
+
+    <item
+        android:id="@+id/nav_cerrarsesion"
+        android:title="Cerrar sesión"
+        />
+
+</menu>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="452dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/powerfull" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="172dp"
+        android:background="@drawable/stylo_borde_editext"
+        android:ems="10"
+        android:fontFamily="@font/robotoregular"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Confirme contraseña"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="240dp"
+        android:background="@drawable/stylo_borde_editext"
+        android:ems="10"
+        android:fontFamily="@font/robotoregular"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="@string/contrase_a"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TextViewEdits" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/stylo_borde_editext"
+        android:ems="10"
+        android:fontFamily="@font/robotoregular"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Correo electrónico"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TextViewEdits" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="360dp"
+        android:background="@drawable/stylo_borde_editext"
+        android:ems="10"
+        android:fontFamily="@font/robotoregular"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Nombre de usuario"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TextViewEdits" />
+
+    <Button
+        android:id="@+id/buttonRegistro"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="@color/colorbotones"
+        android:fontFamily="@font/robotoregular"
+        android:gravity="center"
+        android:text="@string/registrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="210dp"
+        android:layout_height="270dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/stylo_borde_editextrojo"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
