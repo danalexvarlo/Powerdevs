@@ -14,19 +14,85 @@
             android:id="@+id/action_homeFragment_to_miperfilFragment"
             app:destination="@+id/miperfilFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_drawerHome"
-            app:destination="@id/drawerHome" />
+            android:id="@+id/action_homeFragment_to_productosFragment"
+            app:destination="@id/productosFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_carritodecomprasFragment"
+            app:destination="@id/carritodecomprasFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_editarmiperfilFragment"
+            app:destination="@id/editarmiperfilFragment" />
     </fragment>
     <fragment
         android:id="@+id/miperfilFragment"
         android:name="com.example.powertechs.fragments.MiperfilFragment"
         android:label="fragment_miperfil"
-        tools:layout="@layout/fragment_miperfil" />
-    <activity
-        android:id="@+id/drawerHome"
-        android:name="com.example.powertechs.view.ui.activities.ProductosActivity"
-        android:label="activity_productos"
-        tools:layout="@layout/activity_productos">
-
-    </activity>
+        tools:layout="@layout/fragment_miperfil" >
+        <action
+            android:id="@+id/action_miperfilFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_miperfilFragment_to_productosFragment"
+            app:destination="@id/productosFragment" />
+        <action
+            android:id="@+id/action_miperfilFragment_to_carritodecomprasFragment"
+            app:destination="@id/carritodecomprasFragment" />
+        <action
+            android:id="@+id/action_miperfilFragment_to_editarmiperfilFragment"
+            app:destination="@id/editarmiperfilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productosFragment"
+        android:name="com.example.powertechs.fragments.ProductosFragment"
+        android:label="fragment_productos"
+        tools:layout="@layout/fragment_productos" >
+        <action
+            android:id="@+id/action_productosFragment_to_miperfilFragment"
+            app:destination="@id/miperfilFragment" />
+        <action
+            android:id="@+id/action_productosFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_productosFragment_to_carritodecomprasFragment"
+            app:destination="@id/carritodecomprasFragment" />
+        <action
+            android:id="@+id/action_productosFragment_to_editarmiperfilFragment"
+            app:destination="@id/editarmiperfilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/carritodecomprasFragment"
+        android:name="com.example.powertechs.fragments.CarritodecomprasFragment"
+        android:label="fragment_carritodecompras"
+        tools:layout="@layout/fragment_carritodecompras" >
+        <action
+            android:id="@+id/action_carritodecomprasFragment_to_miperfilFragment"
+            app:destination="@id/miperfilFragment" />
+        <action
+            android:id="@+id/action_carritodecomprasFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_carritodecomprasFragment_to_productosFragment"
+            app:destination="@id/productosFragment" />
+        <action
+            android:id="@+id/action_carritodecomprasFragment_to_editarmiperfilFragment"
+            app:destination="@id/editarmiperfilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editarmiperfilFragment"
+        android:name="com.example.powertechs.fragments.editarmiperfilFragment"
+        android:label="fragment_editarmiperfil"
+        tools:layout="@layout/fragment_editarmiperfil" >
+        <action
+            android:id="@+id/action_editarmiperfilFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_editarmiperfilFragment_to_carritodecomprasFragment"
+            app:destination="@id/carritodecomprasFragment" />
+        <action
+            android:id="@+id/action_editarmiperfilFragment_to_miperfilFragment"
+            app:destination="@id/miperfilFragment" />
+        <action
+            android:id="@+id/action_editarmiperfilFragment_to_productosFragment"
+            app:destination="@id/productosFragment" />
+    </fragment>
 </navigation>

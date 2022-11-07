@@ -23,7 +23,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".view.ui.activities.ProductosActivity"
             android:exported="false">
@@ -31,7 +30,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".view.ui.activities.RegistroActivity"
             android:exported="true">
@@ -39,7 +37,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".view.ui.activities.RecuperarActivity"
             android:exported="true">
@@ -47,7 +44,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".view.ui.activities.LoginActivity"
             android:exported="true">
@@ -55,7 +51,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".view.ui.activities.MainActivity"
             android:exported="true">
@@ -69,7 +64,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
     </application>
 
 </manifest>

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 import com.example.powertechs.R
 
@@ -16,6 +17,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
+        (activity as AppCompatActivity).supportActionBar?.title="Página principal"
         return view
     }
 
@@ -31,7 +33,19 @@ class HomeFragment : Fragment() {
         val cardProductos = view.findViewById<ImageView>(R.id.cardProductos)
         cardProductos.setOnClickListener()
         {
-            findNavController().navigate(R.id.action_homeFragment_to_drawerHome)
+            findNavController().navigate(R.id.action_homeFragment_to_productosFragment)
+        }
+
+        val cardCarrito = view.findViewById<ImageView>(R.id.cardCarrito)
+        cardCarrito.setOnClickListener()
+        {
+            findNavController().navigate(R.id.action_homeFragment_to_carritodecomprasFragment)
+        }
+
+        val cardEditarperfil = view.findViewById<ImageView>(R.id.cardEditarperfil)
+        cardEditarperfil.setOnClickListener()
+        {
+            findNavController().navigate(R.id.action_homeFragment_to_editarmiperfilFragment)
         }
     }
 }

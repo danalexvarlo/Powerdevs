@@ -16,7 +16,7 @@ class RegistroActivity : AppCompatActivity()
         setContentView(R.layout.activity_registro)
         buttonregistro=findViewById(R.id.buttonRegistro)
         buttonregistro.setOnClickListener {
-            startActivity(Intent(this, ProductosActivity::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
         }
     }
 }

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools">
     <item
         android:id="@+id/nav_home"
-        android:title="Página principal"/>
+        android:title="Página principal"
+        android:icon="@drawable/iconohome"/>
     <item
         android:id="@+id/nav_perfil"
         android:title="Perfil"
@@ -17,7 +18,8 @@
 
     <item
         android:id="@+id/nav_productos"
-        android:title="Productos" />
+        android:title="Productos"
+        android:icon="@drawable/computador"/>
 
     <item
         android:icon="@drawable/iconocarrito"
