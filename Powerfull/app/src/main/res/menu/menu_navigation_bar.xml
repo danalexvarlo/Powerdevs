@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Pagina principal"
+        android:id="@+id/homeBar"
+        android:icon="@drawable/iconohome">
+    </item>
+
+    <item
+        android:title="Productos"
+        android:id="@+id/productosBar"
+        android:icon="@drawable/computador"
+        tools:ignore="DuplicateIds">
+    </item>
+
+    <item
+        android:title="Perfil"
+        android:id="@+id/perfilBar"
+        android:icon="@drawable/iconoperfil">
+    </item>
+
+    <item
+        android:title="Carrito de compras"
+        android:id="@+id/carritoBar"
+        android:icon="@drawable/iconocarrito">
+    </item>
+
+    <item
+        android:title="Cantacto"
+        android:id="@+id/contactoBar"
+        android:icon="@drawable/iconocontacto">
+    </item>
+
+</menu>

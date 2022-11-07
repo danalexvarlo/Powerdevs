@@ -64,7 +64,7 @@
                             android:textSize="18dp"
                             android:textStyle="bold"
                             android:textAlignment="center"
-                            android:text="Mi Perfil">
+                            android:text="      Mi Perfil    ">
                         </TextView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -86,10 +86,10 @@
                         android:padding="16dp">
 
                         <ImageView
+                            android:id="@+id/cardEditarperfil"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:src="@drawable/iconoeditarperfil">
-
                         </ImageView>
 
                         <TextView
@@ -99,7 +99,8 @@
                             android:text="Editar mi perfil"
                             android:textAlignment="center"
                             android:textSize="18dp"
-                            android:textStyle="bold"></TextView>
+                            android:textStyle="bold">
+                        </TextView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                 <!-- //////////////////////////////////////// -->
@@ -152,6 +153,7 @@
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
+                            android:id="@+id/cardCarrito"
                             android:src="@drawable/iconocarrito">
                         </ImageView>
                         <TextView

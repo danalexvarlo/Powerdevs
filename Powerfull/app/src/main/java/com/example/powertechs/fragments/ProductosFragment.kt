@@ -2,19 +2,18 @@ package com.example.powertechs.fragments
 
 import android.os.Bundle
 import android.view.*
-import androidx.fragment.app.Fragment
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.powertechs.R
-import com.example.powertechs.view.ui.adapter.CarritoAdapter
 import com.example.powertechs.view.ui.adapter.ProductosAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class CarritodecomprasFragment : Fragment() {
-
+class ProductosFragment : Fragment() {
     lateinit var recyclerView: RecyclerView
     lateinit var actionBar: ActionBar
 
@@ -23,13 +22,13 @@ class CarritodecomprasFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_carritodecompras, container, false)
-        recyclerView=view.findViewById(R.id.recyclerview_carrito)
-        val adapter = CarritoAdapter()
+        val view = inflater.inflate(R.layout.fragment_productos, container, false)
+        recyclerView=view.findViewById(R.id.recyclerview)
+        val adapter = ProductosAdapter()
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = adapter
 
-        (activity as AppCompatActivity).supportActionBar?.title="Carrito de compras"
+        (activity as AppCompatActivity).supportActionBar?.title="Productos"
         return view
     }
 
@@ -40,10 +39,10 @@ class CarritodecomprasFragment : Fragment() {
         button.setOnNavigationItemReselectedListener {
             when(it.itemId)
             {
-                R.id.homeBar -> findNavController().navigate(R.id.action_carritodecomprasFragment_to_homeFragment)
-                R.id.productosBar -> findNavController().navigate(R.id.action_carritodecomprasFragment_to_productosFragment)
-                R.id.perfilBar -> findNavController().navigate(R.id.action_carritodecomprasFragment_to_miperfilFragment)
-                R.id.nav_carritodecompras -> findNavController().navigate(R.id.carritodecomprasFragment)
+                R.id.homeBar -> findNavController().navigate(R.id.action_productosFragment_to_homeFragment)
+                R.id.productosBar -> findNavController().navigate(R.id.productosFragment)
+                R.id.perfilBar -> findNavController().navigate(R.id.action_productosFragment_to_miperfilFragment)
+                R.id.carritoBar -> findNavController().navigate(R.id.action_productosFragment_to_carritodecomprasFragment)
             }
         }
     }
