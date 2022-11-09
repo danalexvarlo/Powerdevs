@@ -22,37 +22,27 @@
             android:src="@drawable/powerfull">
         </ImageView>
     </RelativeLayout>
-    <ScrollView
-        android:id="@+id/scrollProductos"
-        android:layout_width="360dp"
+
+    <RelativeLayout
+        android:layout_width="350dp"
         android:layout_height="500dp"
-        android:background="@drawable/stylo_borde_editextrojo"
-        android:translationX="25dp"
+        android:translationX="30dp"
         android:translationY="150dp"
-        tools:ignore="MissingConstraints">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            app:layout_constraintRight_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginTop="5dp">
+        app:layout_constraintBaseline_toBottomOf="@id/encabezado"
+        android:background="@drawable/stylo_borde_editextrojo">
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerview"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:translationY="150dp"
+                android:translationY="0dp"
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="155dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintEnd_toStartOf="parent"
-                app:layout_constraintBaseline_toBottomOf="@id/encabezado"
-                tools:ignore="MissingConstraints">
+                app:layout_constraintEnd_toStartOf="parent">
             </androidx.recyclerview.widget.RecyclerView>
-        </LinearLayout>
-    </ScrollView>
+    </RelativeLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/buttonNavigationMenu"

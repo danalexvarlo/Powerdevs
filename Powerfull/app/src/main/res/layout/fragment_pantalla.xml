@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/pantallaFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ComputadorFragment">
+
+    <ImageView
+        android:id="@+id/descripcionPantalla"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/pantalla"
+        android:translationX="110dp"
+        android:translationY="30dp">
+    </ImageView>
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:text="Pantalla"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:translationX="160dp"
+        android:translationY="210dp">
+    </TextView>
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:text="Precio: $550.000"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:translationX="110dp"
+        android:translationY="240dp">
+    </TextView>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:translationX="55dp"
+        android:translationY="280dp"
+        android:background="@drawable/stylo_borde_editextrojo">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Se utiliza para nombrar al lienzo sobre el cual un artefacto especial se encarga de proyectar
+                    ciertas imágenes y al dispositivo que, en el ámbito de la informática y la tecnología, permite la visualización de datos."
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/firasans">
+                </TextView>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/botonAgregarPantalla"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="AGREGAR"
+        android:fontFamily="@font/firasans"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:translationX="95dp"
+        android:translationY="635dp">
+    </Button>
+</FrameLayout>

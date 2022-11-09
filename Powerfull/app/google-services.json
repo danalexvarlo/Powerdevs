@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "470393186766",
+    "project_id": "powerfull-6c0bc",
+    "storage_bucket": "powerfull-6c0bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470393186766:android:2cd44e5ce8439bb3e5e39f",
+        "android_client_info": {
+          "package_name": "com.example.powertechs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470393186766-99noc56sitlqtf8ha03v0fq3bsormaud.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpL3hSUjo6tHIZkRE0-gd4-tF3NUR2Mkc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470393186766-99noc56sitlqtf8ha03v0fq3bsormaud.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -19,13 +19,8 @@ class HomeActivity : AppCompatActivity()
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
     }
-
-    /*fun replaceFragment(HomeFragment: Fragment)
-    {
-        val fragmentManager = supportFragmentManager
-        val transaction = fragmentManager.beginTransaction()
-        transaction.replace(R.id.nav_graph, HomeFragment)
-        transaction.addToBackStack(null)
-        //transaction.commit()
-    }*/
+    
+    override fun onBackPressed() {
+        return
+    }
 }

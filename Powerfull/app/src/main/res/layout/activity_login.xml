@@ -17,7 +17,7 @@
         android:src="@drawable/powerfull" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/loginCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -26,7 +26,7 @@
         android:layout_marginBottom="350dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Email"
+        android:hint="Correo electrónico"
         android:fontFamily="@font/robotoregular"
         android:gravity="center"
         android:textColor="@color/black"
@@ -34,7 +34,7 @@
         android:background="@drawable/stylo_borde_editext"/>
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/loginContrasena"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -43,7 +43,7 @@
         android:layout_marginBottom="250dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Contraseña"
+        android:hint="Contraseña"
         android:fontFamily="@font/robotoregular"
         android:gravity="center"
         android:textColor="@color/black"
