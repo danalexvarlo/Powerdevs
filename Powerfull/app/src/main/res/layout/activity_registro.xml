@@ -35,7 +35,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/contrasenaRegistro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="110dp"
@@ -45,7 +45,7 @@
         android:fontFamily="@font/robotoregular"
         android:gravity="center"
         android:inputType="textPersonName"
-        android:text="@string/contrase_a"
+        android:hint="@string/contrase_a"
         android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="normal"
@@ -54,7 +54,7 @@
         tools:ignore="TextViewEdits" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/correoRegistro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="110dp"
@@ -64,7 +64,7 @@
         android:fontFamily="@font/robotoregular"
         android:gravity="center"
         android:inputType="textPersonName"
-        android:text="Correo electrónico"
+        android:hint="Correo electrónico"
         android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="normal"

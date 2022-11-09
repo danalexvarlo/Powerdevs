@@ -1,9 +1,9 @@
 package com.example.powertechs.view.ui.adapter
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -11,9 +11,20 @@ import com.example.powertechs.R
 
 class CarritoAdapter: RecyclerView.Adapter<CarritoAdapter.ViewHolder>() {
 
+    val titles : MutableList<String> = mutableListOf("Computador")
+    var precioProductos = mutableListOf<String>("$3.550.000")
+    var image  = mutableListOf<Int>(R.drawable.computador)
+
     override fun onCreateViewHolder(ViewGroup: ViewGroup, i: Int): ViewHolder{
         val v= LayoutInflater.from(ViewGroup.context).inflate(R.layout.card_view_carrito, ViewGroup, false)
         return ViewHolder(v)
+    }
+    fun agregarElementos(titulo : String, precios : String, imagen : Int)
+    {
+        titles.add(titulo)
+        precioProductos.add(precios)
+        image.add(imagen)
+        Log.i(titles.size.toString(), "Número de elementos de la lista")
     }
 
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
@@ -28,13 +39,10 @@ class CarritoAdapter: RecyclerView.Adapter<CarritoAdapter.ViewHolder>() {
         }
     }
 
-    val titles = arrayOf("Teclado", "Mouse", "Pantalla", "Impresora")
-    val precio = arrayOf("$120.000", "$50.000", "$550.000", "$750.000")
-    val image = arrayOf(R.drawable.tecladomecanicoblanco, R.drawable.mouse, R.drawable.pantalla, R.drawable.impresora)
-
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
-        viewHolder.itemTitle.text=titles[i]
-        viewHolder.itemPrecio.text=precio[i]
+
+        viewHolder.itemTitle.text= titles[i]
+        viewHolder.itemPrecio.text= precioProductos[i]
         viewHolder.itemImage.setImageResource(image[i])
     }
 

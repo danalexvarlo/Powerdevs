@@ -23,6 +23,7 @@ import java.lang.Thread.sleep
 
 class MainActivity : AppCompatActivity()
 {
+
     lateinit var binding: ActivityMainBinding
     lateinit var handler: Handler
     override fun onCreate(savedInstanceState: Bundle?) {

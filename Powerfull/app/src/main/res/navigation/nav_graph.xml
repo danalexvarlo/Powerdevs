@@ -58,6 +58,24 @@
         <action
             android:id="@+id/action_productosFragment_to_editarmiperfilFragment"
             app:destination="@id/editarmiperfilFragment" />
+        <action
+            android:id="@+id/action_productosFragment_to_computadorFragment"
+            app:destination="@id/computadorFragment" />
+        <action
+            android:id="@+id/action_productosFragment_to_tecladoFragment"
+            app:destination="@id/tecladoFragment" />
+        <action
+            android:id="@+id/action_productosFragment_to_mouseFragment"
+            app:destination="@id/mouseFragment" />
+        <action
+            android:id="@+id/action_productosFragment_to_impresoraFragment"
+            app:destination="@id/impresoraFragment" />
+        <action
+            android:id="@+id/action_productosFragment_to_pantallaFragment2"
+            app:destination="@id/pantallaFragment2" />
+        <action
+            android:id="@+id/action_productosFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
     </fragment>
     <fragment
         android:id="@+id/carritodecomprasFragment"
@@ -95,4 +113,35 @@
             android:id="@+id/action_editarmiperfilFragment_to_productosFragment"
             app:destination="@id/productosFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/computadorFragment"
+        android:name="com.example.powertechs.fragments.ComputadorFragment"
+        android:label="fragment_computador"
+        tools:layout="@layout/fragment_computador" />
+    <fragment
+        android:id="@+id/tecladoFragment"
+        android:name="com.example.powertechs.fragments.TecladoFragment"
+        android:label="fragment_teclado"
+        tools:layout="@layout/fragment_teclado"/>
+    <fragment
+        android:id="@+id/mouseFragment"
+        android:name="com.example.powertechs.fragments.MouseFragment"
+        android:label="MouseFragment"
+        tools:layout="@layout/fragment_mouse"/>
+    <fragment
+        android:id="@+id/impresoraFragment"
+        android:name="com.example.powertechs.fragments.ImpresoraFragment"
+        android:label="ImpresoraFragment"
+        tools:layout="@layout/fragment_impresora"/>
+    <fragment
+        android:id="@+id/pantallaFragment2"
+        android:name="com.example.powertechs.fragments.PantallaFragment"
+        android:label="PantallaFragment"
+        tools:layout="@layout/fragment_pantalla"/>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.powertechs.view.ui.activities.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+
 </navigation>
