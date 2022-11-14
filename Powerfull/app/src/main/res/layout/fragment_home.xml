@@ -37,37 +37,7 @@
                 android:rowCount="3"
                 android:alignmentMode="alignMargins"
                 android:columnOrderPreserved="false">
-                <androidx.cardview.widget.CardView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    app:cardElevation="5dp"
-                    app:cardCornerRadius="5dp"
-                    android:layout_margin="12dp">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:padding="16dp">
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:src="@drawable/iconoperfil"
-                            android:id="@+id/cardMiperfil">
-                        </ImageView>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:textSize="18dp"
-                            android:textStyle="bold"
-                            android:textAlignment="center"
-                            android:text="      Mi Perfil    ">
-                        </TextView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
+
                 <!-- //////////////////////////////// -->
                 <androidx.cardview.widget.CardView
                     android:layout_width="128dp"
@@ -96,7 +66,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:text="Editar mi perfil"
+                            android:text="Mi perfil"
                             android:textAlignment="center"
                             android:textSize="18dp"
                             android:textStyle="bold">
@@ -226,6 +196,38 @@
                             android:textStyle="bold"
                             android:textAlignment="center"
                             android:text="Comentarios">
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- ///////////////////////////////////////// -->
+                <androidx.cardview.widget.CardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_margin="12dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/cerrarSesion"
+                            android:src="@drawable/iconocerrarsesion">
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:text=" Cerrar sesión  ">
                         </TextView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>

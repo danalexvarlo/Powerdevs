@@ -11,7 +11,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.powertechs.R
 import com.example.powertechs.view.ui.adapter.CarritoAdapter
 
-class ImpresoraFragment: Fragment() {
+class TarjetagraficaFragment: Fragment() {
     lateinit var boton : Button
     val lista = CarritoAdapter()
     override fun onCreateView(
@@ -19,17 +19,17 @@ class ImpresoraFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_impresora, container, false)
+        val view = inflater.inflate(R.layout.fragment_tarjetagrafica, container, false)
         (activity as AppCompatActivity).supportActionBar?.title="Productos"
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        boton = view.findViewById(R.id.botonAgregarImpresora)
+        boton = view.findViewById(R.id.botonAgregarTarjetagrafica)
         boton.setOnClickListener()
         {
-            lista.agregarElementos("Impresora", "3550000", R.drawable.impresora)
+            lista.agregarElementos("Impresora", "3550000", R.drawable.tarjetagrafica)
             findNavController().navigate(R.id.carritodecomprasFragment)
         }
     }

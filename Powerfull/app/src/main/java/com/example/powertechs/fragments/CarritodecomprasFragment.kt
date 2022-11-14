@@ -42,7 +42,7 @@ class CarritodecomprasFragment : Fragment() {
             {
                 R.id.homeBar -> findNavController().navigate(R.id.action_carritodecomprasFragment_to_homeFragment)
                 R.id.productosBar -> findNavController().navigate(R.id.action_carritodecomprasFragment_to_productosFragment)
-                R.id.perfilBar -> findNavController().navigate(R.id.action_carritodecomprasFragment_to_miperfilFragment)
+                R.id.perfilBar -> findNavController().navigate(R.id.action_carritodecomprasFragment_to_editarmiperfilFragment)
                 R.id.nav_carritodecompras -> findNavController().navigate(R.id.carritodecomprasFragment)
             }
         }

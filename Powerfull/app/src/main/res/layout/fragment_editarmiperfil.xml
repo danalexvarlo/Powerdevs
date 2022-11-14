@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,12 +20,12 @@
         app:srcCompat="@drawable/iconoperfil" />
     <RelativeLayout
         android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_height="270dp"
         android:translationY="270dp"
         android:translationX="50dp"
         android:background="@drawable/stylo_borde_editextrojo">
         <EditText
-            android:id="@+id/editTextTextPersonName6"
+            android:id="@+id/nombreCompleto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/stylo_borde_editext"
@@ -32,17 +33,18 @@
             android:fontFamily="@font/robotoregular"
             android:gravity="center"
             android:inputType="textPersonName"
-            android:text="Cambiar usuario"
+            android:text="Danny Alexander"
             android:textColor="@color/black"
             android:textSize="15sp"
             android:textStyle="normal"
             android:translationX="55dp"
             android:translationY="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent">
+        </EditText>
 
         <EditText
-            android:id="@+id/editTextTextPersonName5"
+            android:id="@+id/apellidosCompletos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/stylo_borde_editext"
@@ -50,7 +52,7 @@
             android:fontFamily="@font/robotoregular"
             android:gravity="center"
             android:inputType="textPersonName"
-            android:text="Cambiar contraseña"
+            android:text="Vargas Lozano"
             android:textColor="@color/black"
             android:textSize="15sp"
             android:textStyle="normal"
@@ -61,7 +63,7 @@
             tools:ignore="TextViewEdits" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/correoEditarperfil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/stylo_borde_editext"
@@ -69,7 +71,7 @@
             android:fontFamily="@font/robotoregular"
             android:gravity="center"
             android:inputType="textPersonName"
-            android:text="Cambiar correo"
+            android:text="danalexvarlo@gmail.com"
             android:textColor="@color/black"
             android:textSize="15sp"
             android:textStyle="normal"
@@ -80,7 +82,7 @@
             tools:ignore="TextViewEdits" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/telefonoEditarperfil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/stylo_borde_editext"
@@ -88,7 +90,7 @@
             android:fontFamily="@font/robotoregular"
             android:gravity="center"
             android:inputType="textPersonName"
-            android:text="Cambiar nombre"
+            android:text="+57 3164986348"
             android:textColor="@color/black"
             android:textSize="15sp"
             android:textStyle="normal"
@@ -97,10 +99,11 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             tools:ignore="TextViewEdits" />
+
     </RelativeLayout>
 
     <Button
-        android:id="@+id/buttonRegistro"
+        android:id="@+id/buttonConfirmar"
         android:layout_width="170dp"
         android:layout_height="50dp"
         android:translationX="115dp"
@@ -124,5 +127,25 @@
         app:menu="@menu/menu_navigation_bar"
         tools:ignore="MissingConstraints">
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <Button
+        android:id="@+id/buttonEditarPerfil"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/colorbotones"
+        android:fontFamily="@font/firasans"
+        android:text="editar información"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:translationX="115dp"
+        android:translationY="550dp">
+    </Button>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_edit_24"
+        android:translationX="290dp"
+        android:translationY="560dp">
+    </ImageView>
 
 </FrameLayout>
