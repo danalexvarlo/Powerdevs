@@ -19,6 +19,8 @@ class RegistroActivity : AppCompatActivity()
     lateinit var buttonregistro : Button
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var nombre: EditText
+    private lateinit var email: EditText
+    private lateinit var password: EditText
     private lateinit var dbreference : DatabaseReference
     private lateinit var database: FirebaseDatabase
 
@@ -34,6 +36,8 @@ class RegistroActivity : AppCompatActivity()
         val correo = findViewById<EditText>(R.id.correoRegistro)
         val contrasena = findViewById<EditText>(R.id.contrasenaRegistro)
         nombre = findViewById(R.id.nombreRegistro)
+        email = findViewById(R.id.correoRegistro)
+        password = findViewById(R.id.contrasenaRegistro)
         buttonregistro.setOnClickListener {
             crearCuenta(correo.text.toString(), contrasena.text.toString())
         }
@@ -42,6 +46,8 @@ class RegistroActivity : AppCompatActivity()
     private fun crearCuenta(correo:String, contrasena: String)
     {
         val name: String = nombre.text.toString()
+        val emails: String = email.text.toString()
+        val passw: String = password.text.toString()
         firebaseAuth.createUserWithEmailAndPassword(correo, contrasena)
             .addOnCompleteListener(this){
                 Task -> if(Task.isSuccessful)
@@ -49,6 +55,8 @@ class RegistroActivity : AppCompatActivity()
                     val user = firebaseAuth.currentUser
                     val userdb = dbreference.child(user?.uid.toString())
                     userdb.child("name").setValue(name)
+                    userdb.child("correo").setValue(emails)
+                    userdb.child("contrasena").setValue(passw)
                     Toast.makeText(baseContext, "Cuenta creada", Toast.LENGTH_SHORT).show()
                     startActivity(Intent(this, HomeActivity::class.java))
                 }

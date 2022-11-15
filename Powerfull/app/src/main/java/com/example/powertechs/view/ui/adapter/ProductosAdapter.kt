@@ -5,19 +5,12 @@ import android.icu.text.CaseMap.Title
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.view.menu.MenuView.ItemView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.powertechs.R
-import android.widget.AdapterView
-import android.widget.AdapterView.OnItemClickListener
-import com.example.powertechs.fragments.ProductosFragment
 import com.example.powertechs.models.productos
 import com.squareup.picasso.Picasso
-import org.w3c.dom.Text
 
 class ProductosAdapter(private val context: Context): RecyclerView.Adapter<ProductosAdapter.ViewHolder>() {
 
@@ -63,7 +56,6 @@ class ProductosAdapter(private val context: Context): RecyclerView.Adapter<Produ
     {
         val producto = productosLista[i]
         viewHolder.binWeb(producto)
-
     }
 
     override fun getItemCount(): Int {

@@ -25,8 +25,6 @@ import com.google.firebase.ktx.Firebase
 
 class ProductosFragment : Fragment() {
     lateinit var recyclerView: RecyclerView
-    lateinit var actionBar: ActionBar
-    lateinit var lista: ProductosAdapter
     private lateinit var firebaseAuth: FirebaseAuth
     lateinit var adapter: ProductosAdapter
     private val viewmodel by lazy { ViewModelProvider(this).get(ProductosViewModel::class.java) }
@@ -53,7 +51,7 @@ class ProductosFragment : Fragment() {
             override fun onItemClick(position: Int) {
                 if(position == 0)
                 {
-                    findNavController().navigate(R.id.action_productosFragment_to_tecladoFragment)
+                    findNavController().navigate(R.id.action_productosFragment_to_impresoraFragment)
                 }
 
                 else if(position == 1)
