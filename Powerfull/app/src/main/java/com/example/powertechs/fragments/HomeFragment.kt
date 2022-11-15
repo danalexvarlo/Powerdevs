@@ -9,8 +9,11 @@ import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 import com.example.powertechs.R
+import com.google.firebase.auth.FirebaseAuth
 
 class HomeFragment : Fragment() {
+
+    private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,12 +27,6 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?)
     {
         super.onViewCreated(view, savedInstanceState)
-        val cardMiperfil = view.findViewById<ImageView>(R.id.cardMiperfil)
-        cardMiperfil.setOnClickListener()
-        {
-            findNavController().navigate(R.id.action_homeFragment_to_miperfilFragment)
-        }
-
         val cardProductos = view.findViewById<ImageView>(R.id.cardProductos)
         cardProductos.setOnClickListener()
         {
@@ -46,6 +43,14 @@ class HomeFragment : Fragment() {
         cardEditarperfil.setOnClickListener()
         {
             findNavController().navigate(R.id.action_homeFragment_to_editarmiperfilFragment)
+        }
+
+        val cardCerrarsesion = view.findViewById<ImageView>(R.id.cerrarSesion)
+        cardCerrarsesion.setOnClickListener()
+        {
+            firebaseAuth.signOut()
+            findNavController().navigate(R.id.action_homeFragment_to_loginActivity)
+            true
         }
     }
 }

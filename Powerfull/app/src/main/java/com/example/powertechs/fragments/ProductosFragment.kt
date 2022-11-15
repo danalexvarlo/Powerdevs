@@ -10,11 +10,14 @@ import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.powertechs.R
 import com.example.powertechs.view.ui.adapter.ProductosAdapter
+import com.example.powertechs.view.ui.viewmodel.ProductosViewModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -22,9 +25,9 @@ import com.google.firebase.ktx.Firebase
 
 class ProductosFragment : Fragment() {
     lateinit var recyclerView: RecyclerView
-    lateinit var actionBar: ActionBar
-    lateinit var lista: ProductosAdapter
     private lateinit var firebaseAuth: FirebaseAuth
+    lateinit var adapter: ProductosAdapter
+    private val viewmodel by lazy { ViewModelProvider(this).get(ProductosViewModel::class.java) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,14 +43,15 @@ class ProductosFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_productos, container, false)
 
         recyclerView=view.findViewById(R.id.recyclerview)
-        val adapter = ProductosAdapter()
+        adapter = ProductosAdapter(requireContext())
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = adapter
+        observeData()
         adapter.setOnItemClickListener(object : ProductosAdapter.onItemClickListener{
             override fun onItemClick(position: Int) {
                 if(position == 0)
                 {
-                    findNavController().navigate(R.id.action_productosFragment_to_tecladoFragment)
+                    findNavController().navigate(R.id.action_productosFragment_to_impresoraFragment)
                 }
 
                 else if(position == 1)
@@ -57,16 +61,16 @@ class ProductosFragment : Fragment() {
 
                 else if(position == 2)
                 {
-                    findNavController().navigate(R.id.action_productosFragment_to_pantallaFragment2)
+                    findNavController().navigate(R.id.action_productosFragment_to_computadorFragment)
                 }
 
                 else if(position == 3)
                 {
-                    findNavController().navigate(R.id.action_productosFragment_to_impresoraFragment)
+                    findNavController().navigate(R.id.action_productosFragment_to_pantallaFragment2)
                 }
                 else
                 {
-                    findNavController().navigate(R.id.action_productosFragment_to_computadorFragment)
+                    findNavController().navigate(R.id.action_productosFragment_to_tecladoFragment)
                 }
             }
 
@@ -75,6 +79,15 @@ class ProductosFragment : Fragment() {
         (activity as AppCompatActivity).supportActionBar?.title="Productos"
 
         return view
+    }
+
+    fun observeData()
+    {
+        viewmodel.productosData().observe(viewLifecycleOwner, Observer
+        {
+            adapter.setListData(it)
+            adapter.notifyDataSetChanged()
+        })
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -86,7 +99,7 @@ class ProductosFragment : Fragment() {
             {
                 R.id.homeBar -> findNavController().navigate(R.id.action_productosFragment_to_homeFragment)
                 R.id.productosBar -> findNavController().navigate(R.id.productosFragment)
-                R.id.perfilBar -> findNavController().navigate(R.id.action_productosFragment_to_miperfilFragment)
+                R.id.perfilBar -> findNavController().navigate(R.id.action_carritodecomprasFragment_to_editarmiperfilFragment)
                 R.id.carritoBar -> findNavController().navigate(R.id.action_productosFragment_to_carritodecomprasFragment)
                 R.id.cerrarsesionBar -> {
                     firebaseAuth.signOut()

@@ -1,12 +1,13 @@
 package com.example.powertechs.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.powertechs.R
 import com.example.powertechs.view.ui.adapter.CarritoAdapter
@@ -16,8 +17,7 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 
-class ComputadorFragment : Fragment() {
-
+class TarjetagraficaFragment: Fragment() {
     lateinit var boton : Button
 
     private lateinit var firebaseAuth: FirebaseAuth
@@ -28,10 +28,9 @@ class ComputadorFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_computador, container, false)
-        (activity as AppCompatActivity).supportActionBar?.title="Computador"
+        val view = inflater.inflate(R.layout.fragment_tarjetagrafica, container, false)
+        (activity as AppCompatActivity).supportActionBar?.title="Productos"
 
         firebaseAuth = Firebase.auth
         database = FirebaseDatabase.getInstance()
@@ -42,15 +41,21 @@ class ComputadorFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        boton = view.findViewById(R.id.botonAgregarPc)
+        boton = view.findViewById(R.id.botonAgregarTarjetagrafica)
         boton.setOnClickListener()
         {
-            val user = firebaseAuth.currentUser
-            val userdb = dbreference.child(user!!.uid).child("compra05")
-            userdb.child("titulo").setValue("Computador")
-            userdb.child("precio").setValue("$"+3550000)
-            userdb.child("image").setValue("https://www.tauretcomputadores.com/images/products/Product_20210529124415515630695.png")
-            findNavController().navigate(R.id.carritodecomprasFragment)
+            agregarTarjetagrafica()
         }
+    }
+
+    fun agregarTarjetagrafica()
+    {
+        val user = firebaseAuth.currentUser
+        val userdb = dbreference.child(user!!.uid).child("compra01")
+        //userdb.addChildEventListener()
+        userdb.child("titulo").setValue("Tarjeta Gráfica")
+        userdb.child("precio").setValue("$"+5050000)
+        userdb.child("image").setValue("https://tauretcomputadores.com/images/products/Product_20220304145807935645986.png")
+        findNavController().navigate(R.id.carritodecomprasFragment)
     }
 }

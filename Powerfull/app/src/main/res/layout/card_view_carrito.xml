@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/title"
+            android:id="@+id/titleCarrito"
             android:text="Nombre producto"
             android:textSize="20dp"
             android:fontFamily="@font/firasans"
@@ -43,11 +43,47 @@
             android:textStyle="bold"
             android:fontFamily="@font/firasans"
             android:textSize="20dp"
-            android:id="@+id/precio"
+            android:id="@+id/precioCarrito"
             android:layout_toEndOf="@+id/imagenCarrito"
             android:layout_toRightOf="@+id/imagenCarrito"
-            android:layout_below="@+id/title">
+            android:layout_below="@+id/titleCarrito">
         </TextView>
+
+        <EditText
+            android:id="@+id/cantidadProductos"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/precioCarrito"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/imagenCarrito"
+            android:layout_toRightOf="@id/imagenCarrito"
+            android:background="@drawable/stylo_borde_editext"
+            android:fontFamily="@font/firasans"
+            android:textStyle="bold"
+            android:hint="0">
+        </EditText>
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="-80dp"
+            android:layout_marginBottom="50dp"
+            android:translationY="80dp"
+            android:layout_toStartOf="@+id/cantidadProductos"
+            android:background="@drawable/stylo_borde_bordeimagen"
+            android:src="@drawable/ic_baseline_arrow_drop_down_24">
+        </ImageButton>
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/cantidadProductos"
+            android:background="@drawable/stylo_borde_bordeimagen"
+            android:src="@drawable/ic_baseline_arrow_drop_up_24"
+            android:translationY="80dp">
+        </ImageButton>
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

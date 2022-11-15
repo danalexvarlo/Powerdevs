@@ -1,5 +1,6 @@
 package com.example.powertechs.view.ui.adapter
 
+import android.content.Context
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -8,45 +9,47 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.powertechs.R
+import com.example.powertechs.models.carritoModel
+import com.squareup.picasso.Picasso
 
-class CarritoAdapter: RecyclerView.Adapter<CarritoAdapter.ViewHolder>() {
+class CarritoAdapter(private val context: Context): RecyclerView.Adapter<CarritoAdapter.ViewHolder>() {
 
-    val titles : MutableList<String> = mutableListOf("Computador")
-    var precioProductos = mutableListOf<String>("$3.550.000")
-    var image  = mutableListOf<Int>(R.drawable.computador)
+    private var productosCarrito = mutableListOf<carritoModel>()
+
+    fun setListData(data:MutableList<carritoModel>)
+    {
+        productosCarrito = data
+    }
 
     override fun onCreateViewHolder(ViewGroup: ViewGroup, i: Int): ViewHolder{
         val v= LayoutInflater.from(ViewGroup.context).inflate(R.layout.card_view_carrito, ViewGroup, false)
         return ViewHolder(v)
     }
-    fun agregarElementos(titulo : String, precios : String, imagen : Int)
+
+    inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)
     {
-        titles.add(titulo)
-        precioProductos.add(precios)
-        image.add(imagen)
-        Log.i(titles.size.toString(), "Número de elementos de la lista")
-    }
-
-    inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
-        var itemImage: ImageView
-        var itemTitle: TextView
-        var itemPrecio: TextView
-
-        init{
-            itemImage = itemView.findViewById(R.id.imagenCarrito)
-            itemTitle = itemView.findViewById(R.id.title)
-            itemPrecio = itemView.findViewById(R.id.precio)
+        fun binWeb(carrito: carritoModel)
+        {
+            itemView.findViewById<TextView>(R.id.titleCarrito).text = carrito.titulo
+            itemView.findViewById<TextView>(R.id.precioCarrito).text = carrito.precio.toString()
+            Picasso.with(context).load(carrito.image).into(itemView.findViewById<ImageView>(R.id.imagenCarrito))
         }
+
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
-
-        viewHolder.itemTitle.text= titles[i]
-        viewHolder.itemPrecio.text= precioProductos[i]
-        viewHolder.itemImage.setImageResource(image[i])
+        val carrito = productosCarrito[i]
+        viewHolder.binWeb(carrito)
     }
 
     override fun getItemCount(): Int {
-        return titles.size
+        return if(productosCarrito.size > 0)
+        {
+            productosCarrito.size
+        }
+        else
+        {
+            0
+        }
     }
 }

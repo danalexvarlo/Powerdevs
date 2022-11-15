@@ -22,7 +22,7 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="400dp"
+        android:layout_width="380dp"
         android:layout_height="400dp"
         android:translationX="5dp"
         android:translationY="160dp"
