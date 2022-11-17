@@ -23,7 +23,7 @@
 
     <RelativeLayout
         android:layout_width="380dp"
-        android:layout_height="400dp"
+        android:layout_height="300dp"
         android:translationX="5dp"
         android:translationY="160dp"
         android:background="@drawable/stylo_borde_editextrojo">
@@ -43,24 +43,100 @@
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="155dp">
         </androidx.recyclerview.widget.RecyclerView>
-
-        <TextView
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="Total del pedido: $720.000"
-            android:fontFamily="@font/firasans"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            android:background="@color/colorprimario"
-            android:translationY="350dp"
-            android:translationX="50dp">
-        </TextView>
     </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/firasans"
+        android:text="IVA    ....................................."
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:translationX="20dp"
+        android:translationY="470dp">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/firasans"
+        android:text="19%"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:translationX="280dp"
+        android:translationY="470dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/firasans"
+        android:text="TOTAL IVA   ........................."
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:translationX="20dp"
+        android:translationY="500dp">
+    </TextView>
+    <TextView
+        android:id="@+id/totalIvaCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/firasans"
+        android:text="total iva"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:translationX="280dp"
+        android:translationY="500dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/firasans"
+        android:text="SUBTOTAL   ........................."
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:translationX="20dp"
+        android:translationY="530dp">
+    </TextView>
+    <TextView
+        android:id="@+id/subtotalCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/firasans"
+        android:text="subtotal"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:translationX="280dp"
+        android:translationY="530dp">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/firasans"
+        android:text="TOTAL   ........................."
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:translationX="20dp"
+        android:translationY="560dp">
+    </TextView>
+    <TextView
+        android:id="@+id/totalCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/firasans"
+        android:text="total"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:translationX="280dp"
+        android:translationY="560dp">
+    </TextView>
+
+
     <Button
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:translationX="100dp"
-        android:translationY="570dp"
+        android:translationY="590dp"
         android:backgroundTint="@color/colorbotones"
         android:text="PAGAR"
         android:fontFamily="@font/firasans"

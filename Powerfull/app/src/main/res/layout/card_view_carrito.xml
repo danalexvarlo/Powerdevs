@@ -39,51 +39,88 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="precio"
+            android:text="Precio"
             android:textStyle="bold"
             android:fontFamily="@font/firasans"
-            android:textSize="20dp"
-            android:id="@+id/precioCarrito"
+            android:textSize="15dp"
+            android:id="@+id/precioTitle"
             android:layout_toEndOf="@+id/imagenCarrito"
             android:layout_toRightOf="@+id/imagenCarrito"
             android:layout_below="@+id/titleCarrito">
         </TextView>
-
-        <EditText
-            android:id="@+id/cantidadProductos"
-            android:layout_width="40dp"
-            android:layout_height="20dp"
-            android:layout_below="@id/precioCarrito"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="20dp"
-            android:layout_toEndOf="@id/imagenCarrito"
-            android:layout_toRightOf="@id/imagenCarrito"
-            android:background="@drawable/stylo_borde_editext"
+        <TextView
+            android:id="@+id/precioCarrito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleCarrito"
+            android:layout_alignParentEnd="true"
             android:fontFamily="@font/firasans"
+            android:text="0"
+            android:textSize="15dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cantidad"
             android:textStyle="bold"
-            android:hint="0">
-        </EditText>
+            android:fontFamily="@font/firasans"
+            android:textSize="15dp"
+            android:id="@+id/cantidadCarrito"
+            android:layout_toEndOf="@+id/imagenCarrito"
+            android:layout_toRightOf="@+id/imagenCarrito"
+            android:layout_below="@+id/precioTitle">
+        </TextView>
+
+        <TextView
+            android:id="@+id/cantidadProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/precioCarrito"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/firasans"
+            android:text="0"
+            android:textSize="15dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textStyle="bold"
+            android:fontFamily="@font/firasans"
+            android:textSize="15dp"
+            android:id="@+id/totalCarrito"
+            android:layout_toEndOf="@+id/imagenCarrito"
+            android:layout_toRightOf="@+id/imagenCarrito"
+            android:layout_below="@+id/cantidadCarrito">
+        </TextView>
+        <TextView
+            android:id="@+id/totalProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cantidadProducto"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/firasans"
+            android:text="0"
+            android:textSize="15dp"
+            android:textStyle="bold">
+        </TextView>
+
 
         <ImageButton
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginEnd="-80dp"
-            android:layout_marginBottom="50dp"
-            android:translationY="80dp"
-            android:layout_toStartOf="@+id/cantidadProductos"
-            android:background="@drawable/stylo_borde_bordeimagen"
-            android:src="@drawable/ic_baseline_arrow_drop_down_24">
+            android:id="@+id/quitarArticulo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="280dp"
+            android:translationY="75dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_cancel_24">
         </ImageButton>
 
-        <ImageButton
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="0dp"
-            android:layout_toEndOf="@+id/cantidadProductos"
-            android:background="@drawable/stylo_borde_bordeimagen"
-            android:src="@drawable/ic_baseline_arrow_drop_up_24"
-            android:translationY="80dp">
-        </ImageButton>
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
