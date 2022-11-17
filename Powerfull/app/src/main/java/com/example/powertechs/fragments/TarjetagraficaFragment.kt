@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -19,6 +20,7 @@ import com.google.firebase.ktx.Firebase
 
 class TarjetagraficaFragment: Fragment() {
     lateinit var boton : Button
+    lateinit var cantidadTarjetagrafica : EditText
 
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var dbreference : DatabaseReference
@@ -31,6 +33,7 @@ class TarjetagraficaFragment: Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_tarjetagrafica, container, false)
         (activity as AppCompatActivity).supportActionBar?.title="Productos"
+        cantidadTarjetagrafica = view.findViewById(R.id.cantidadTarjetagrafica)
 
         firebaseAuth = Firebase.auth
         database = FirebaseDatabase.getInstance()
@@ -51,10 +54,11 @@ class TarjetagraficaFragment: Fragment() {
     fun agregarTarjetagrafica()
     {
         val user = firebaseAuth.currentUser
-        val userdb = dbreference.child(user!!.uid).child("compra01")
-        //userdb.addChildEventListener()
+        val userdb = dbreference.child(user!!.uid).child("Tarjetagrafica")
         userdb.child("titulo").setValue("Tarjeta Gráfica")
-        userdb.child("precio").setValue("$"+5050000)
+        userdb.child("precio").setValue("$5.050.000")
+        userdb.child("cantidad").setValue(cantidadTarjetagrafica.text.toString())
+        userdb.child("total").setValue(5050000*cantidadTarjetagrafica.text.toString().toInt())
         userdb.child("image").setValue("https://tauretcomputadores.com/images/products/Product_20220304145807935645986.png")
         findNavController().navigate(R.id.carritodecomprasFragment)
     }

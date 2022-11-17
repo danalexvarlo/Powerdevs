@@ -39,7 +39,7 @@
     </TextView>
     <RelativeLayout
         android:layout_width="300dp"
-        android:layout_height="350dp"
+        android:layout_height="300dp"
         android:translationX="55dp"
         android:translationY="280dp"
         android:background="@drawable/stylo_borde_editextrojo">
@@ -64,6 +64,32 @@
             </LinearLayout>
         </ScrollView>
     </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="CANTIDAD"
+        android:textColor="@color/black"
+        android:fontFamily="@font/firasans"
+        android:translationX="100dp"
+        android:translationY="590dp">
+    </TextView>
+    <EditText
+        android:id="@+id/cantidadMouse"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:background="@drawable/stylo_borde_editext"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/firasans"
+        android:text="1"
+        android:gravity="center"
+        android:translationX="210dp"
+        android:translationY="585dp"
+        android:inputType="number">
+    </EditText>
 
     <Button
         android:id="@+id/botonAgregarMouse"

@@ -1,10 +1,11 @@
 package com.example.powertechs.view.ui.adapter
 
 import android.content.Context
-import android.util.Log
+import android.icu.text.Transliterator.Position
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -15,6 +16,7 @@ import com.squareup.picasso.Picasso
 class CarritoAdapter(private val context: Context): RecyclerView.Adapter<CarritoAdapter.ViewHolder>() {
 
     private var productosCarrito = mutableListOf<carritoModel>()
+    private lateinit var quitarArticulo : ImageButton
 
     fun setListData(data:MutableList<carritoModel>)
     {
@@ -31,7 +33,9 @@ class CarritoAdapter(private val context: Context): RecyclerView.Adapter<Carrito
         fun binWeb(carrito: carritoModel)
         {
             itemView.findViewById<TextView>(R.id.titleCarrito).text = carrito.titulo
-            itemView.findViewById<TextView>(R.id.precioCarrito).text = carrito.precio.toString()
+            itemView.findViewById<TextView>(R.id.precioCarrito).text = carrito.precio
+            itemView.findViewById<TextView>(R.id.cantidadProducto).text = carrito.cantidad
+            itemView.findViewById<TextView>(R.id.totalProducto).text = carrito.total
             Picasso.with(context).load(carrito.image).into(itemView.findViewById<ImageView>(R.id.imagenCarrito))
         }
 

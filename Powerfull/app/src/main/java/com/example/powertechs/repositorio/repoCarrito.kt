@@ -26,9 +26,8 @@ class repoCarrito
         dbreference = database.reference.child("Carrito")
 
         val user = firebaseAuth.currentUser
-        val userdb = dbreference.child(user?.uid.toString()).toString()
 
-        FirebaseDatabase.getInstance().getReference("Carrito").child(user!!.uid)//.child("nXVMa6EOJGZmpiLNt92VFJjf65e2")
+        FirebaseDatabase.getInstance().getReference("Carrito").child(user!!.uid)
             .addValueEventListener(object: ValueEventListener
             {
                 val listData = mutableListOf<carritoModel>()
@@ -42,9 +41,13 @@ class repoCarrito
                                 locationSnapshot.child("titulo").getValue().toString()
                             val precio: String =
                                 locationSnapshot.child("precio").getValue().toString()
+                            val cantidad: String =
+                                locationSnapshot.child("cantidad").getValue().toString()
+                            val total: String =
+                                locationSnapshot.child("total").getValue().toString()
                             val image: String =
                                 locationSnapshot.child("image").getValue().toString()
-                            val productos = carritoModel(titulo!!, precio!!, image!!)
+                            val productos = carritoModel(titulo!!, precio!!, image!!, cantidad!!, total!!)
                             listData.add(productos)
                         }
                     }
