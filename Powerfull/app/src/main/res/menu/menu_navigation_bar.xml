@@ -27,8 +27,8 @@
     </item>
 
     <item
-        android:title="Cerrar sesión"
-        android:id="@+id/cerrarsesionBar"
+        android:title="Contáctanos"
+        android:id="@+id/contactanosBar"
         android:icon="@drawable/iconocontacto">
     </item>
 

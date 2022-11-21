@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    android:id="@+id/fragmentImpresora"
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/fragmentTarjetagrafica"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,97 +8,118 @@
     android:background="@color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.TarjetagraficaFragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/descripcionImpresora"
-        android:layout_width="200dp"
-        android:layout_height="190dp"
-        android:src="@drawable/tarjetagrafica"
-        android:translationX="110dp"
-        android:translationY="30dp">
-    </ImageView>
-    <TextView
-        android:layout_width="160dp"
-        android:layout_height="40dp"
-        android:text="Tarjet Gráfica"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        android:translationX="120dp"
-        android:translationY="210dp">
-    </TextView>
-    <TextView
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:text="Precio: $5.050.000"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        android:translationX="90dp"
-        android:translationY="240dp">
-    </TextView>
-    <RelativeLayout
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:translationX="55dp"
-        android:translationY="280dp"
-        android:background="@drawable/stylo_borde_editextrojo">
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <LinearLayout
+        <include
+            android:id="@+id/toolbar_tarjetgrafica"
+            layout="@layout/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </include>
+
+        <ImageView
+            android:id="@+id/descripcionImpresora"
+            android:layout_width="200dp"
+            android:layout_height="190dp"
+            android:src="@drawable/tarjetagrafica"
+            android:translationX="110dp"
+            android:translationY="50dp">
+        </ImageView>
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:text="Tarjet Gráfica"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:translationX="120dp"
+            android:translationY="230dp">
+        </TextView>
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="Precio: $5.050.000"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:translationX="90dp"
+            android:translationY="260dp">
+        </TextView>
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:translationX="55dp"
+            android:translationY="300dp"
+            android:background="@drawable/stylo_borde_editextrojo">
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
+                android:layout_height="wrap_content">
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Una impresora es un periférico de ordenador que permite producir una copia permanente de textos o gráficos
-                    de documentos almacenados en formato electrónico, imprimiéndolos en medios físicos, normalmente en papel o transparencias,
-                    utilizando cartuchos de tinta o tecnología láser."
-                    android:textSize="30dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/firasans">
-                </TextView>
-            </LinearLayout>
-        </ScrollView>
-    </RelativeLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:text="CANTIDAD"
-        android:textColor="@color/black"
-        android:fontFamily="@font/firasans"
-        android:translationX="100dp"
-        android:translationY="590dp">
-    </TextView>
-    <EditText
-        android:id="@+id/cantidadTarjetagrafica"
-        android:layout_width="80dp"
-        android:layout_height="45dp"
-        android:background="@drawable/stylo_borde_editext"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:fontFamily="@font/firasans"
-        android:text="1"
-        android:gravity="center"
-        android:translationX="210dp"
-        android:translationY="585dp"
-        android:inputType="number">
-    </EditText>
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Una impresora es un periférico de ordenador que permite producir una copia permanente de textos o gráficos
+                        de documentos almacenados en formato electrónico, imprimiéndolos en medios físicos, normalmente en papel o transparencias,
+                        utilizando cartuchos de tinta o tecnología láser."
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/firasans">
+                    </TextView>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="CANTIDAD"
+            android:textColor="@color/black"
+            android:fontFamily="@font/firasans"
+            android:translationX="100dp"
+            android:translationY="610dp">
+        </TextView>
+        <EditText
+            android:id="@+id/cantidadTarjetagrafica"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:background="@drawable/stylo_borde_editext"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/firasans"
+            android:text="1"
+            android:gravity="center"
+            android:translationX="210dp"
+            android:translationY="605dp"
+            android:inputType="number">
+        </EditText>
 
-    <Button
-        android:id="@+id/botonAgregarTarjetagrafica"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:text="AGREGAR"
-        android:fontFamily="@font/firasans"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:translationX="95dp"
-        android:translationY="635dp">
-    </Button>
-</FrameLayout>
+        <Button
+            android:id="@+id/botonAgregarTarjetagrafica"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="AGREGAR"
+            android:fontFamily="@font/firasans"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationX="95dp"
+            android:translationY="655dp">
+        </Button>
+    </FrameLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

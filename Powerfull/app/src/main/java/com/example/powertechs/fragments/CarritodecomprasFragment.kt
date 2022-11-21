@@ -3,8 +3,13 @@ package com.example.powertechs.fragments
 import android.os.Bundle
 import android.view.*
 import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -14,6 +19,7 @@ import com.example.powertechs.view.ui.adapter.CarritoAdapter
 import com.example.powertechs.view.ui.viewmodel.CarritoViewModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.lifecycle.Observer
+import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.*
@@ -35,6 +41,8 @@ class CarritodecomprasFragment : Fragment()
     lateinit var adapter: CarritoAdapter
     private val viewmodel by lazy { ViewModelProvider(this).get(CarritoViewModel::class.java) }
 
+    lateinit var toggle : ActionBarDrawerToggle
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -42,6 +50,60 @@ class CarritodecomprasFragment : Fragment()
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_carritodecompras, container, false)
+
+        val toolbar: Toolbar = view.findViewById(R.id.toolbar_carritodecompras)
+        val drawerLayout: DrawerLayout = view.findViewById(R.id.carritodecompras_fragment)
+        val navView : NavigationView = view.findViewById(R.id.nav_view)
+
+        toggle = ActionBarDrawerToggle( this.requireContext() as AppCompatActivity, drawerLayout, toolbar, R.string.open, R.string.close)
+        drawerLayout.addDrawerListener(toggle)
+        toggle.syncState()
+        toolbar.setTitle("Carrito de compras")
+
+        toolbar.setNavigationOnClickListener {
+            if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+                drawerLayout.closeDrawer(GravityCompat.START)
+            } else {
+                drawerLayout.openDrawer(Gravity.START)
+            }
+        }
+
+        navView.setNavigationItemSelectedListener()
+        {
+            when(it.itemId)
+            {
+                R.id.nav_home -> {
+                    findNavController().navigate(R.id.action_carritodecomprasFragment_to_homeFragment)
+                    Toast.makeText(context, "Página princial", Toast.LENGTH_SHORT).show()
+                }
+                R.id.nav_perfil -> {
+                    findNavController().navigate(R.id.action_carritodecomprasFragment_to_editarmiperfilFragment)
+                    Toast.makeText(context, "Perfil", Toast.LENGTH_SHORT).show()
+                }
+                R.id.nav_productos -> {
+                    findNavController().navigate(R.id.action_carritodecomprasFragment_to_productosFragment)
+                    Toast.makeText(context, "Productos", Toast.LENGTH_SHORT).show()
+                }
+                R.id.nav_comentarios -> {
+                    findNavController().navigate(R.id.action_carritodecomprasFragment_to_comentariosFragment)
+                    Toast.makeText(context, "Comentarios de la tienda", Toast.LENGTH_SHORT).show()
+                }
+                R.id.nav_carritodecompras ->{
+                    findNavController().navigate(R.id.carritodecomprasFragment)
+                    Toast.makeText(context, "Carrito de compras", Toast.LENGTH_SHORT).show()
+                }
+                R.id.nav_contactenos ->{
+                    findNavController().navigate(R.id.action_carritodecomprasFragment_to_mapaFragment)
+                    Toast.makeText(context, "Contáctanos", Toast.LENGTH_SHORT).show()
+                }
+                R.id.nav_cerrarsesion ->{
+                    firebaseAuth.signOut()
+                    findNavController().navigate(R.id.action_carritodecomprasFragment_to_loginActivity)
+                }
+            }
+            true
+        }
+
         recyclerView=view.findViewById(R.id.recyclerview_carrito)
         adapter = CarritoAdapter(requireContext())
         recyclerView.layoutManager = LinearLayoutManager(context)
@@ -124,6 +186,7 @@ class CarritodecomprasFragment : Fragment()
                 R.id.productosBar -> findNavController().navigate(R.id.action_carritodecomprasFragment_to_productosFragment)
                 R.id.perfilBar -> findNavController().navigate(R.id.action_carritodecomprasFragment_to_editarmiperfilFragment)
                 R.id.nav_carritodecompras -> findNavController().navigate(R.id.carritodecomprasFragment)
+                R.id.contactanosBar -> findNavController().navigate(R.id.action_carritodecomprasFragment_to_mapaFragment)
             }
         }
     }

@@ -9,6 +9,9 @@ import android.os.Handler
 import android.os.Looper
 import android.os.PersistableBundle
 import android.view.MenuItem
+import android.view.View
+import android.view.Window
+import android.view.WindowManager
 import android.widget.Toast
 import android.widget.Toolbar
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -27,6 +30,11 @@ class MainActivity : AppCompatActivity()
     lateinit var binding: ActivityMainBinding
     lateinit var handler: Handler
     override fun onCreate(savedInstanceState: Bundle?) {
+        /*requestWindowFeature(Window.FEATURE_NO_TITLE)
+        this.window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        supportActionBar?.hide()*/
+        supportActionBar?.hide()
+
         sleep(2000)
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)

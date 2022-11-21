@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<androidx.drawerlayout.widget.DrawerLayout
     android:id="@+id/pantallaFragment"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,96 +8,117 @@
     android:background="@color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.ComputadorFragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/descripcionPantalla"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/pantalla"
-        android:translationX="110dp"
-        android:translationY="30dp">
-    </ImageView>
-    <TextView
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:text="Pantalla"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        android:translationX="160dp"
-        android:translationY="210dp">
-    </TextView>
-    <TextView
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:text="Precio: $599.000"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        android:translationX="110dp"
-        android:translationY="240dp">
-    </TextView>
-    <RelativeLayout
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:translationX="55dp"
-        android:translationY="280dp"
-        android:background="@drawable/stylo_borde_editextrojo">
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <LinearLayout
+        <include
+            android:id="@+id/toolbar_pantalla"
+            layout="@layout/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </include>
+
+        <ImageView
+            android:id="@+id/descripcionPantalla"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/pantalla"
+            android:translationX="110dp"
+            android:translationY="50dp">
+        </ImageView>
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:text="Pantalla"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:translationX="160dp"
+            android:translationY="230dp">
+        </TextView>
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="Precio: $599.000"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:translationX="110dp"
+            android:translationY="260dp">
+        </TextView>
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:translationX="55dp"
+            android:translationY="300dp"
+            android:background="@drawable/stylo_borde_editextrojo">
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
+                android:layout_height="wrap_content">
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Se utiliza para nombrar al lienzo sobre el cual un artefacto especial se encarga de proyectar
-                    ciertas imágenes y al dispositivo que, en el ámbito de la informática y la tecnología, permite la visualización de datos."
-                    android:textSize="30dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/firasans">
-                </TextView>
-            </LinearLayout>
-        </ScrollView>
-    </RelativeLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:text="CANTIDAD"
-        android:textColor="@color/black"
-        android:fontFamily="@font/firasans"
-        android:translationX="100dp"
-        android:translationY="590dp">
-    </TextView>
-    <EditText
-        android:id="@+id/cantidadPantalla"
-        android:layout_width="80dp"
-        android:layout_height="45dp"
-        android:background="@drawable/stylo_borde_editext"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:fontFamily="@font/firasans"
-        android:text="1"
-        android:gravity="center"
-        android:translationX="210dp"
-        android:translationY="585dp"
-        android:inputType="number">
-    </EditText>
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Se utiliza para nombrar al lienzo sobre el cual un artefacto especial se encarga de proyectar
+                        ciertas imágenes y al dispositivo que, en el ámbito de la informática y la tecnología, permite la visualización de datos."
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/firasans">
+                    </TextView>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="CANTIDAD"
+            android:textColor="@color/black"
+            android:fontFamily="@font/firasans"
+            android:translationX="100dp"
+            android:translationY="610dp">
+        </TextView>
+        <EditText
+            android:id="@+id/cantidadPantalla"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:background="@drawable/stylo_borde_editext"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/firasans"
+            android:text="1"
+            android:gravity="center"
+            android:translationX="210dp"
+            android:translationY="605dp"
+            android:inputType="number">
+        </EditText>
 
-    <Button
-        android:id="@+id/botonAgregarPantalla"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:text="AGREGAR"
-        android:fontFamily="@font/firasans"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:translationX="95dp"
-        android:translationY="635dp">
-    </Button>
-</FrameLayout>
+        <Button
+            android:id="@+id/botonAgregarPantalla"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="AGREGAR"
+            android:fontFamily="@font/firasans"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationX="95dp"
+            android:translationY="655dp">
+        </Button>
+    </FrameLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

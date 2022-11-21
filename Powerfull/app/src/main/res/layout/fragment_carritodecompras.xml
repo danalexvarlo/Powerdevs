@@ -1,160 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/carritodecompras_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.CarritodecomprasFragment">
-
-    <RelativeLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginLeft="0dp"
-        android:background="@drawable/theme_gradients_background">
-        <ImageView
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/toolbar_carritodecompras"
+            layout="@layout/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </include>
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/powerfull">
-        </ImageView>
-    </RelativeLayout>
+            android:layout_height="140dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/theme_gradients_background">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/powerfull">
+            </ImageView>
+        </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="380dp"
-        android:layout_height="300dp"
-        android:translationX="5dp"
-        android:translationY="160dp"
-        android:background="@drawable/stylo_borde_editextrojo">
+        <RelativeLayout
+            android:layout_width="380dp"
+            android:layout_height="300dp"
+            android:translationX="5dp"
+            android:translationY="210dp"
+            android:background="@drawable/stylo_borde_editextrojo">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerview_carrito"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_carrito"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="-150dp"
+                android:translationY="150dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="155dp">
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/firasans"
+            android:text="IVA    ....................................."
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationX="20dp"
+            android:translationY="520dp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/firasans"
+            android:text="19%"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationX="280dp"
+            android:translationY="520dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/firasans"
+            android:text="TOTAL IVA   ........................."
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationX="20dp"
+            android:translationY="550dp">
+        </TextView>
+        <TextView
+            android:id="@+id/totalIvaCarrito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/firasans"
+            android:text="total iva"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationX="280dp"
+            android:translationY="550dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/firasans"
+            android:text="SUBTOTAL   ........................."
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationX="20dp"
+            android:translationY="580dp">
+        </TextView>
+        <TextView
+            android:id="@+id/subtotalCarrito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/firasans"
+            android:text="subtotal"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationX="280dp"
+            android:translationY="580dp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/firasans"
+            android:text="TOTAL   ........................."
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationX="20dp"
+            android:translationY="610dp">
+        </TextView>
+        <TextView
+            android:id="@+id/totalCarrito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/firasans"
+            android:text="total"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationX="280dp"
+            android:translationY="610dp">
+        </TextView>
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:translationX="100dp"
+            android:translationY="640dp"
+            android:backgroundTint="@color/colorbotones"
+            android:text="PAGAR"
+            android:fontFamily="@font/firasans"
+            android:textStyle="bold"
+            android:textSize="20dp">
+        </Button>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/buttonNavigationMenu"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="-150dp"
-            android:translationY="150dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintEnd_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="155dp">
-        </androidx.recyclerview.widget.RecyclerView>
-    </RelativeLayout>
+            android:layout_height="45dp"
+            android:translationY="720dp"
+            android:background="@color/colorprimario"
+            android:backgroundTint="@color/black"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/menu_navigation_bar">
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </FrameLayout>
 
-    <TextView
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/firasans"
-        android:text="IVA    ....................................."
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:translationX="20dp"
-        android:translationY="470dp">
-    </TextView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/firasans"
-        android:text="19%"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:translationX="280dp"
-        android:translationY="470dp">
-    </TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/firasans"
-        android:text="TOTAL IVA   ........................."
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:translationX="20dp"
-        android:translationY="500dp">
-    </TextView>
-    <TextView
-        android:id="@+id/totalIvaCarrito"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/firasans"
-        android:text="total iva"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:translationX="280dp"
-        android:translationY="500dp">
-    </TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/firasans"
-        android:text="SUBTOTAL   ........................."
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:translationX="20dp"
-        android:translationY="530dp">
-    </TextView>
-    <TextView
-        android:id="@+id/subtotalCarrito"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/firasans"
-        android:text="subtotal"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:translationX="280dp"
-        android:translationY="530dp">
-    </TextView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/firasans"
-        android:text="TOTAL   ........................."
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:translationX="20dp"
-        android:translationY="560dp">
-    </TextView>
-    <TextView
-        android:id="@+id/totalCarrito"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/firasans"
-        android:text="total"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:translationX="280dp"
-        android:translationY="560dp">
-    </TextView>
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+    </com.google.android.material.navigation.NavigationView>
 
 
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:translationX="100dp"
-        android:translationY="590dp"
-        android:backgroundTint="@color/colorbotones"
-        android:text="PAGAR"
-        android:fontFamily="@font/firasans"
-        android:textStyle="bold"
-        android:textSize="20dp">
-    </Button>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/buttonNavigationMenu"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:translationY="660dp"
-        android:background="@color/colorprimario"
-        android:backgroundTint="@color/black"
-        app:layout_constraintRight_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/menu_navigation_bar"
-        tools:ignore="MissingConstraints">
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-</FrameLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
