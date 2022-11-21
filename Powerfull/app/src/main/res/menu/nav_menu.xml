@@ -12,11 +12,6 @@
         android:icon="@drawable/iconoperfil"/>
 
     <item
-        android:id="@+id/nav_editarperfil"
-        android:title="Editar Perfil"
-        android:icon="@drawable/iconoeditarperfil"/>
-
-    <item
         android:id="@+id/nav_productos"
         android:title="Productos"
         android:icon="@drawable/computador"/>
@@ -39,6 +34,7 @@
     <item
         android:id="@+id/nav_cerrarsesion"
         android:title="Cerrar sesión"
+        android:icon="@drawable/iconocerrarsesion"
         />
 
 </menu>

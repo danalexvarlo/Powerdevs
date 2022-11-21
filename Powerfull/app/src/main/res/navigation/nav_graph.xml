@@ -22,6 +22,12 @@
         <action
             android:id="@+id/action_homeFragment_to_loginActivity"
             app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_comentariosFragment"
+            app:destination="@+id/comentariosFragment"/>
     </fragment>
     <fragment
         android:id="@+id/productosFragment"
@@ -55,6 +61,12 @@
         <action
             android:id="@+id/action_productosFragment_to_loginActivity"
             app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_productosFragment_to_contactanosFragment"
+            app:destination="@+id/mapaFragment"/>
+        <action
+            android:id="@+id/action_productosFragment_to_comentariosFragment"
+            app:destination="@id/comentariosFragment" />
     </fragment>
     <fragment
         android:id="@+id/carritodecomprasFragment"
@@ -70,6 +82,15 @@
         <action
             android:id="@+id/action_carritodecomprasFragment_to_editarmiperfilFragment"
             app:destination="@id/editarmiperfilFragment" />
+        <action
+            android:id="@+id/action_carritodecomprasFragment_to_mapaFragment"
+            app:destination="@+id/mapaFragment"/>
+        <action
+            android:id="@+id/action_carritodecomprasFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_carritodecomprasFragment_to_comentariosFragment"
+            app:destination="@id/comentariosFragment" />
     </fragment>
     <fragment
         android:id="@+id/editarmiperfilFragment"
@@ -85,36 +106,234 @@
         <action
             android:id="@+id/action_editarmiperfilFragment_to_productosFragment"
             app:destination="@id/productosFragment" />
+        <action
+            android:id="@+id/action_editarmiperfilFragment_to_mapaFragment"
+            app:destination="@+id/mapaFragment"/>
+        <action
+            android:id="@+id/action_editarmiperfilFragment_to_comentariosFragment"
+            app:destination="@id/comentariosFragment" />
+        <action
+            android:id="@+id/action_editarmiperfilFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
     </fragment>
     <fragment
         android:id="@+id/computadorFragment"
         android:name="com.example.powertechs.fragments.ComputadorFragment"
         android:label="fragment_computador"
-        tools:layout="@layout/fragment_computador" />
+        tools:layout="@layout/fragment_computador" >
+        <action
+            android:id="@+id/action_computadorFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_computadorFragment_to_editarmiperfilFragment"
+            app:destination="@id/editarmiperfilFragment" />
+        <action
+            android:id="@+id/action_computadorFragment_to_productosFragment"
+            app:destination="@id/productosFragment" />
+        <action
+            android:id="@+id/action_computadorFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_computadorFragment_to_comentariosFragment"
+            app:destination="@id/comentariosFragment" />
+        <action
+            android:id="@+id/action_computadorFragment_to_carritodecomprasFragment"
+            app:destination="@id/carritodecomprasFragment" />
+        <action
+            android:id="@+id/action_computadorFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
     <fragment
         android:id="@+id/tecladoFragment"
         android:name="com.example.powertechs.fragments.TecladoFragment"
         android:label="fragment_teclado"
-        tools:layout="@layout/fragment_teclado"/>
+        tools:layout="@layout/fragment_teclado">
+        <action
+            android:id="@+id/action_tecladoFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_tecladoFragment_to_editarmiperfilFragment"
+            app:destination="@id/editarmiperfilFragment" />
+        <action
+            android:id="@+id/action_tecladoFragment_to_productosFragment"
+            app:destination="@id/productosFragment" />
+        <action
+            android:id="@+id/action_tecladoFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+
+        <action
+            android:id="@+id/action_tecladoFragment_to_carritodecomprasFragment"
+            app:destination="@id/carritodecomprasFragment" />
+        <action
+            android:id="@+id/action_tecladoFragment_to_comentariosFragment"
+            app:destination="@id/comentariosFragment" />
+        <action
+            android:id="@+id/action_tecladoFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
     <fragment
         android:id="@+id/mouseFragment"
         android:name="com.example.powertechs.fragments.MouseFragment"
         android:label="MouseFragment"
-        tools:layout="@layout/fragment_mouse"/>
+        tools:layout="@layout/fragment_mouse">
+        <action
+            android:id="@+id/action_mouseFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_mouseFragment_to_editarmiperfilFragment"
+            app:destination="@id/editarmiperfilFragment" />
+        <action
+            android:id="@+id/action_mouseFragment_to_productosFragment2"
+            app:destination="@id/productosFragment" />
+        <action
+            android:id="@+id/action_mouseFragment_to_mapaFragment"
+            app:destination="@+id/mapaFragment" />
+        <action
+            android:id="@+id/action_mouseFragment_to_comentariosFragment"
+            app:destination="@id/comentariosFragment" />
+        <action
+            android:id="@+id/action_mouseFragment_to_carritodecomprasFragment"
+            app:destination="@id/carritodecomprasFragment" />
+        <action
+            android:id="@+id/action_mouseFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
     <fragment
         android:id="@+id/impresoraFragment"
         android:name="com.example.powertechs.fragments.TarjetagraficaFragment"
         android:label="ImpresoraFragment"
-        tools:layout="@layout/fragment_tarjetagrafica"/>
+        tools:layout="@layout/fragment_tarjetagrafica">
+        <action
+            android:id="@+id/action_tarjetagraficaFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_tarjetagrafica_to_productosFragment"
+            app:destination="@id/productosFragment" />
+        <action
+            android:id="@+id/action_tarjetagrafica_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_tarjetagrafica_to_comentariosFragment"
+            app:destination="@id/comentariosFragment" />
+        <action
+            android:id="@+id/action_tarjetgraficaFragment_to_editarmiperfilFragment"
+            app:destination="@id/editarmiperfilFragment" />
+        <action
+            android:id="@+id/action_tarjetagraficaFragment_to_carritodecomprasFragment"
+            app:destination="@id/carritodecomprasFragment" />
+        <action
+            android:id="@+id/action_tarjetagraficaFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
     <fragment
         android:id="@+id/pantallaFragment2"
         android:name="com.example.powertechs.fragments.PantallaFragment"
         android:label="PantallaFragment"
-        tools:layout="@layout/fragment_pantalla"/>
+        tools:layout="@layout/fragment_pantalla">
+        <action
+            android:id="@+id/action_pantallaFragment2_to_productosFragment"
+            app:destination="@id/productosFragment" />
+        <action
+            android:id="@+id/action_pantallaFragment2_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_pantallaFragment2_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_pantallaFragment2_to_comentariosFragment"
+            app:destination="@id/comentariosFragment" />
+        <action
+            android:id="@+id/action_pantallaFragment2_to_editarmiperfilFragment"
+            app:destination="@id/editarmiperfilFragment" />
+        <action
+            android:id="@+id/action_pantallaFragment2_to_carritodecomprasFragment"
+            app:destination="@id/carritodecomprasFragment" />
+        <action
+            android:id="@+id/action_pantallaFragment2_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
     <activity
         android:id="@+id/loginActivity"
         android:name="com.example.powertechs.view.ui.activities.LoginActivity"
         android:label="activity_login"
         tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/mapaFragment"
+        android:name="com.example.powertechs.fragments.MapaFragment"
+        android:label="fragment_mapa"
+        tools:layout="@layout/fragment_mapa">
+        <action
+            android:id="@+id/action_mapaFragment_to_homeFragment"
+            app:destination="@id/homeFragment"/>
+        <action
+            android:id="@+id/action_mapaFragment_to_productosFragment"
+            app:destination="@+id/productosFragment"/>
+        <action
+            android:id="@+id/action_mapaFragment_to_editarmiperfilFragment"
+            app:destination="@+id/editarmiperfilFragment"/>
+        <action
+            android:id="@+id/action_mapaFragment_to_carritodecomprasFragment"
+            app:destination="@+id/carritodecomprasFragment"/>
+        <action
+            android:id="@+id/action_mapaFragment_to_dejarcomentarioFragment"
+            app:destination="@+id/dejarcomentarioFragment"/>
+        <action
+            android:id="@+id/action_mapaFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_mapaFragment_to_comentariosFragment"
+            app:destination="@id/comentariosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/comentariosFragment"
+        android:name="com.example.powertechs.fragments.ComentariosFragment"
+        android:label="fragment_comentarios"
+        tools:layout="@layout/fragment_comentarios">
+        <action
+            android:id="@+id/action_comentariosFragment_to_perfilFragment"
+            app:destination="@id/editarmiperfilFragment"/>
+        <action
+            android:id="@+id/action_comentariosFragment_to_homeFragment"
+            app:destination="@id/homeFragment"/>
+        <action
+            android:id="@+id/action_comentariosFragment_to_productosFragment"
+            app:destination="@id/productosFragment"/>
+        <action
+            android:id="@+id/action_comentariosFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_comentariosFragment_to_carritodecomprasFragment"
+            app:destination="@id/carritodecomprasFragment" />
+        <action
+            android:id="@+id/action_comentariosFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/dejarcomentarioFragment"
+        android:name="com.example.powertechs.fragments.DejarcomentarioFragment"
+        android:label="fragment_dejarcomentario"
+        tools:layout="@layout/fragment_dejarcomentario">
+        <action
+            android:id="@+id/action_dejarcomentarioFragment_to_comentariosFragment"
+            app:destination="@+id/comentariosFragment"/>
+        <action
+            android:id="@+id/action_dejarcomentarioFragment_to_homeFragment"
+            app:destination="@+id/homeFragment"/>
+        <action
+            android:id="@+id/action_dejarcomentarioFragment_to_productosFragment"
+            app:destination="@+id/productosFragment"/>
+        <action
+            android:id="@+id/action_dejarcomentarioFragment_to_perfilFragment"
+            app:destination="@+id/editarmiperfilFragment"/>
+        <action
+            android:id="@+id/action_dejarcomentarioFragment_to_carritodecomprasFragment"
+            app:destination="@id/carritodecomprasFragment" />
+        <action
+            android:id="@+id/action_dejarcomentarioFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_dejarcomentarioFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
 
 </navigation>

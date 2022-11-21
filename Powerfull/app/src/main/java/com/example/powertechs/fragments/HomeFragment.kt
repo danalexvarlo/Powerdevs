@@ -6,10 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.fragment.findNavController
 import com.example.powertechs.R
+import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class HomeFragment : Fragment() {
 
@@ -20,7 +26,8 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
-        (activity as AppCompatActivity).supportActionBar?.title="Página principal"
+        firebaseAuth = Firebase.auth
+
         return view
     }
 
@@ -45,12 +52,24 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.action_homeFragment_to_editarmiperfilFragment)
         }
 
+        val cardContactenos = view.findViewById<ImageView>(R.id.cardContactenos)
+        cardContactenos.setOnClickListener()
+        {
+            findNavController().navigate(R.id.action_homeFragment_to_mapaFragment)
+        }
+
         val cardCerrarsesion = view.findViewById<ImageView>(R.id.cerrarSesion)
         cardCerrarsesion.setOnClickListener()
         {
             firebaseAuth.signOut()
             findNavController().navigate(R.id.action_homeFragment_to_loginActivity)
             true
+        }
+
+        val cardComentarios = view.findViewById<ImageView>(R.id.cardComentarios)
+        cardComentarios.setOnClickListener()
+        {
+            findNavController().navigate(R.id.action_homeFragment_to_comentariosFragment)
         }
     }
 }

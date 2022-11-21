@@ -155,6 +155,7 @@
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
+                            android:id="@+id/cardContactenos"
                             android:src="@drawable/iconocontacto">
                         </ImageView>
                         <TextView
@@ -184,6 +185,7 @@
                         android:gravity="center"
                         android:padding="16dp">
                         <ImageView
+                            android:id="@+id/cardComentarios"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:src="@drawable/iconocomentarios">

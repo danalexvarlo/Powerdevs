@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import com.example.powertechs.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -21,6 +22,17 @@ class RecuperarActivity : AppCompatActivity()
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recuperar)
+
+        val toolbar: Toolbar = findViewById(R.id.toolbar_recuperar)
+
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+        supportActionBar?.setTitle("Recuperar contraseña")
+        toolbar.setNavigationOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
+        }
+
         val correo = findViewById<EditText>(R.id.recuperarCorreo)
         firebaseAuth = Firebase.auth
         restaurarbutton = findViewById(R.id.Brestaurar)

@@ -1,151 +1,174 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/miperfil_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.editarmiperfilFragment">
 
-    <ImageView
-        android:id="@+id/imageCambiarfoto"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:foregroundGravity="center"
-        android:translationX="100dp"
-        android:translationY="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/iconoperfil" />
-    <RelativeLayout
-        android:layout_width="300dp"
-        android:layout_height="270dp"
-        android:translationY="270dp"
-        android:translationX="50dp"
-        android:background="@drawable/stylo_borde_editextrojo">
-        <EditText
-            android:id="@+id/nombreCompleto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/stylo_borde_editext"
-            android:ems="10"
-            android:fontFamily="@font/robotoregular"
-            android:gravity="center"
-            android:inputType="textPersonName"
-            android:text="Danny Alexander"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="normal"
-            android:translationX="55dp"
-            android:translationY="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
-        </EditText>
-
-        <EditText
-            android:id="@+id/apellidosCompletos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/stylo_borde_editext"
-            android:ems="10"
-            android:fontFamily="@font/robotoregular"
-            android:gravity="center"
-            android:inputType="textPersonName"
-            android:text="Vargas Lozano"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="normal"
-            android:translationX="55dp"
-            android:translationY="80dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:ignore="TextViewEdits" />
-
-        <EditText
-            android:id="@+id/correoEditarperfil"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/stylo_borde_editext"
-            android:ems="10"
-            android:fontFamily="@font/robotoregular"
-            android:gravity="center"
-            android:inputType="textPersonName"
-            android:text="danalexvarlo@gmail.com"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="normal"
-            android:translationX="55dp"
-            android:translationY="140dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:ignore="TextViewEdits" />
-
-        <EditText
-            android:id="@+id/telefonoEditarperfil"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/stylo_borde_editext"
-            android:ems="10"
-            android:fontFamily="@font/robotoregular"
-            android:gravity="center"
-            android:inputType="textPersonName"
-            android:text="+57 3164986348"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="normal"
-            android:translationX="55dp"
-            android:translationY="200dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:ignore="TextViewEdits" />
-
-    </RelativeLayout>
-
-    <Button
-        android:id="@+id/buttonConfirmar"
-        android:layout_width="170dp"
-        android:layout_height="50dp"
-        android:translationX="115dp"
-        android:translationY="600dp"
-        android:backgroundTint="@color/colorbotones"
-        android:fontFamily="@font/robotoregular"
-        android:gravity="center"
-        android:text="CONFIRMAR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/buttonNavigationMenu"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginTop="657dp"
-        android:background="@color/colorprimario"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/menu_navigation_bar"
-        tools:ignore="MissingConstraints">
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/buttonEditarPerfil"
-        android:layout_width="170dp"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/colorbotones"
-        android:fontFamily="@font/firasans"
-        android:text="editar información"
-        android:textSize="12dp"
-        android:textStyle="bold"
-        android:translationX="115dp"
-        android:translationY="550dp">
-    </Button>
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/ic_baseline_edit_24"
-        android:translationX="290dp"
-        android:translationY="560dp">
-    </ImageView>
+        <include
+            android:id="@+id/toolbar_miperfil"
+            layout="@layout/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </include>
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/imageCambiarfoto"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:foregroundGravity="center"
+            android:translationX="100dp"
+            android:translationY="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/iconoperfil" />
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="270dp"
+            android:translationY="270dp"
+            android:translationX="50dp"
+            android:background="@drawable/stylo_borde_editextrojo">
+            <EditText
+                android:id="@+id/nombreCompleto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/stylo_borde_editext"
+                android:ems="10"
+                android:fontFamily="@font/robotoregular"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Danny Alexander"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:translationX="55dp"
+                android:translationY="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+            </EditText>
+
+            <EditText
+                android:id="@+id/apellidosCompletos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/stylo_borde_editext"
+                android:ems="10"
+                android:fontFamily="@font/robotoregular"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Vargas Lozano"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:translationX="55dp"
+                android:translationY="80dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="TextViewEdits" />
+
+            <EditText
+                android:id="@+id/correoEditarperfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/stylo_borde_editext"
+                android:ems="10"
+                android:fontFamily="@font/robotoregular"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="danalexvarlo@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:translationX="55dp"
+                android:translationY="140dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="TextViewEdits" />
+
+            <EditText
+                android:id="@+id/telefonoEditarperfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/stylo_borde_editext"
+                android:ems="10"
+                android:fontFamily="@font/robotoregular"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="+57 3164986348"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:translationX="55dp"
+                android:translationY="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="TextViewEdits" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/buttonConfirmar"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:translationX="115dp"
+            android:translationY="600dp"
+            android:backgroundTint="@color/colorbotones"
+            android:fontFamily="@font/robotoregular"
+            android:gravity="center"
+            android:text="CONFIRMAR"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/buttonNavigationMenu"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="720dp"
+            android:background="@color/colorprimario"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/menu_navigation_bar"
+            tools:ignore="MissingConstraints">
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <Button
+            android:id="@+id/buttonEditarPerfil"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/colorbotones"
+            android:fontFamily="@font/firasans"
+            android:text="editar información"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:translationX="115dp"
+            android:translationY="550dp">
+        </Button>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:translationX="290dp"
+            android:translationY="560dp">
+        </ImageView>
+    </FrameLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
